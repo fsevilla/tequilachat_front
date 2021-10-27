@@ -20,12 +20,12 @@ export class BooksComponent implements OnInit {
   ngOnInit(): void {
     this.isLoading = true;
     this.bookService.getBooks()
-    .then(response => {
+    .then((response:Book[]) => {
       this.libros = response;
       this.isError = false;
       this.isLoading = false;
     })
-    .catch(error => {
+    .catch((error:any) => {
       this.isError = true;
       this.isLoading = false;
     });
