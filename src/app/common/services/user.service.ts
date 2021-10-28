@@ -10,7 +10,7 @@ export class UserService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getItems(): Promise<any> {
+  getUsers(): Promise<any> {
     const url = environment.apiUrl + '/users';
     return this.httpClient.get(url).toPromise();
   }

@@ -19,13 +19,7 @@ export class BookService {
   constructor(private httpClient: HttpClient) { }
 
   getBooks(): Promise<any> {
-    // return new Promise((success, error) => {
-    //   setTimeout(() => {
-    //     success(this.libros);
-    //   }, 2000);
-    // });
     const url = environment.apiUrl + '/albums';
     return this.httpClient.get(url).toPromise();
-
   }
 }

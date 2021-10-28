@@ -11,6 +11,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import { ButtonComponent } from './common/components/button/button.component';
 import { UsersComponent } from './pages/users/users.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UsersComponent } from './pages/users/users.component';
     FooterComponent,
     SidebarComponent,
     ButtonComponent,
-    UsersComponent
+    UsersComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

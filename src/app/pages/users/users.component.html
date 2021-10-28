@@ -1,1 +1,8 @@
-<p>users works!</p>
+<h2>Lista de Usuarios</h2>
+<!-- /users -->
+<ul>
+    <li *ngFor="let item of users">
+       <!-- <a routerLink="/books" [queryParams]="{user:item.id}">{{item.name}}</a> -->
+       <a routerLink="/books/{{item.id}}">{{item.name}}</a>
+    </li>
+</ul>
